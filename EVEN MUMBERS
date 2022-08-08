@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int sum = 0, noeven = 0;
+
+for(int i = 1; i < 10000; i++)
+
+if((i % 2) == 0){
+    sum = sum + i;
+    noeven++;
+}
+double avg = sum/noeven;
+cout << "the average of all even numbers betwwen 1 and 10000 is ";
+cout << avg;
+
+return 0;
+}
